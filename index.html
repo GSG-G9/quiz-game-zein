@@ -4,75 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>quiz game</title>
+    <link href="styles/look.css" rel="stylesheet">
 </head>
+
 <body>
-    <div id="startPage">
-    <h1>welcome to this mini Quiz!!</h1>
-    <h3>here's how it's gonna be</h3>
-    <p>you will have to answer 10 questions
-        then your result will be reviewed on
-        LEADERS BOARD, the highest score
-        will be placed at the top!
-    </p><br>
-    <p>shall we start?!</p>
-    <button id="leaderB" onclick="showLeaderBoard()">LEADERS BOARD</button>
-    <button id="startBtn" onclick="enterName()">start quiz</button>
+    <div id="quizPage">
+        <div id="startPage">
+            <h1>welcome to this mini Quiz!!</h1>
+            <h3>here's how it's gonna be</h3>
+            <p>you will have to answer 10 questions
+                then your result will be reviewed on
+                LEADERS BOARD, the highest score
+                will be placed at the top!
+            </p><br>
+            <p>shall we start?!</p>
+            <button id="leaderB" onclick="showLeaderBoard()">LEADERS BOARD</button>
+            <button id="startBtn" onclick="enterName()">start quiz</button>
+            </div>
+        
+            <div id="leaderBoard">
+                <h2>LEADERS BOARD</h2>
+                <button onclick="goBack()">back</button>
+            </div>
+        
+            <div id="userName">
+                <p>Enter your name here:</p>
+                <input type="text" id="name">
+                <button id="submitBtn" onclick="startQuiz()">Submit</button>
+            </div>
+        
+            <div id="Questions">
+                <div  id= "firstQ">
+                    <p></p>
+                    <button onclick="nextQ()">next</button>
+                </div>
+                <div id= "secondQ">
+                    <p></p>
+                    <button onclick="nextQ()">next</button>
+                </div>
+                <div id= "thirdQ">
+                    <p></p>
+                    <button onclick="nextQ()">next</button>
+                </div>
+                <div id= "fourthQ">
+                    <p></p>
+                    <button onclick="nextQ()">next</button>
+                </div>
+                <div id= "fifthQ">
+                    <p></p>
+                    <button onclick="nextQ()">next</button>
+                </div>
+                <div id= "sixthQ">
+                    <p></p>
+                    <button onclick="nextQ()">next</button>
+                </div>
+                <div id= "seventhQ">
+                    <p></p>
+                    <button onclick="nextQ()">next</button>
+                </div>
+                <div id= "eighthQ">
+                    <p></p>
+                    <button onclick="nextQ()">next</button>
+                </div>
+                <div id= "ninthQ">
+                    <p></p>
+                    <button onclick="nextQ()">next</button>
+                </div>
+                <div id= "tenthQ">
+                    <p></p>
+                    <button onclick="nextQ()">next</button>
+                </div>
+            </div>
+            
+        
     </div>
-
-    <div id="leaderBoard">
-        <h2>LEADERS BOARD</h2>
-        <button onclick="goBack()">back</button>
-    </div>
-
-    <div id="userName">
-        <p>Enter your name here:</p>
-        <input type="text" id="name">
-        <button id="submitBtn" onclick="startQuiz()">Submit</button>
-    </div>
-
-    <div id="Questions">
-        <div  id= "firstQ">
-            <p></p>
-            <button onclick="nextQ()">next</button>
-        </div>
-        <div id= "secondQ">
-            <p></p>
-            <button onclick="nextQ()">next</button>
-        </div>
-        <div id= "thirdQ">
-            <p></p>
-            <button onclick="nextQ()">next</button>
-        </div>
-        <div id= "fourthQ">
-            <p></p>
-            <button onclick="nextQ()">next</button>
-        </div>
-        <div id= "fifthQ">
-            <p></p>
-            <button onclick="nextQ()">next</button>
-        </div>
-        <div id= "sixthQ">
-            <p></p>
-            <button onclick="nextQ()">next</button>
-        </div>
-        <div id= "seventhQ">
-            <p></p>
-            <button onclick="nextQ()">next</button>
-        </div>
-        <div id= "eighthQ">
-            <p></p>
-            <button onclick="nextQ()">next</button>
-        </div>
-        <div id= "ninthQ">
-            <p></p>
-            <button onclick="nextQ()">next</button>
-        </div>
-        <div id= "tenthQ">
-            <p></p>
-            <button onclick="nextQ()">next</button>
-        </div>
-    </div>
-    
-
+    <script src="scripts/file.js"></script>
 </body>
 </html>

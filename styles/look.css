@@ -1,0 +1,16 @@
+#quizPage{
+    background-color: rgb(201, 253, 166);
+    color: black;
+}
+#startPage{
+    display: block;
+}
+#leaderBoard{
+    display: none;
+}
+#userName{
+    display: none;
+}
+#Questions{
+    display: none;
+}
