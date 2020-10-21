@@ -1,6 +1,5 @@
 
-let QsArray = ["firstQ", "secondQ", "thirdQ", "fourthQ", "fifthQ",
-    "sixthQ", "seventhQ", "eighthQ", "ninthQ", "tenthQ"];
+let QsArray = ["firstQ", "secondQ", "thirdQ", "fourthQ", "fifthQ", "sixthQ", "seventhQ", "eighthQ", "ninthQ", "tenthQ"];
 
 let results = {
     player: [],
@@ -91,16 +90,11 @@ function nextQ() { //unfinished
                 Qs.style.display = "block";
             }
         }
-        //show question's number
         let QNumberView = document.createElement('p');
         let QNumber = document.createTextNode(counter + "/10");
         QNumberView.appendChild(QNumber);
         Qs.appendChild(QNumberView);
         //check if the right answer is chosen
-        if (rbt.checked) {
-            //add it to sum of result
-        }
-        ++counter;
     } else {
         //check sum of results
         //store it in results score array
@@ -118,4 +112,5 @@ function nextQ() { //unfinished
             document.getElementById('leaderBoard').appendChild(plRst);
         }
     }
+    counter++;
 }
