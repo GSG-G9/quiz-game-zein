@@ -50,7 +50,7 @@ function selectRandomQ() { //finished
 
 
 //when "submit" in entering name page is pressed
-function startQuiz() { //unfinished
+function startQuiz() { //finished
     document.getElementById('userName').style.display = "block";
     document.getElementById('leaderBoard').style.display = "none";
     document.getElementById('startPage').style.display = "none";
@@ -66,7 +66,14 @@ function startQuiz() { //unfinished
         document.getElementById('Questions').style.display = "block";
         let question1 = selectRandomQ();
         //make this only question appear and hide others
-        question1.style.display === "block";
+        for (let i = 0; i < QsArray.length; i++) {
+            let iterateQ = document.getElementById(QsArray[i]);
+            if (question1 != iterateQ) {
+                iterateQ.style.display = "none";
+            } else {
+                question1.style.display = "block";
+            }
+        }
     }
 }
 
@@ -74,22 +81,26 @@ function startQuiz() { //unfinished
 function nextQ() { //unfinished
     let counter = 1;
     let sumOfResult = 0;
+    //select random question
+    let Qs = selectRandomQ();
     if (counter != 10) {
-        //hide other question div
-        //select random question
-        let Qs = selectRandomQ();
-        //show selected random question
-        Qs.style.display = "block";
+        for (let i = 0; i < QsArray.length; i++) {
+            if (Qs != document.getElementById(QsArray[i])) {
+                document.getElementById(QsArray[i]).style.display = "none";
+            } else {
+                Qs.style.display = "block";
+            }
+        }
         //show question's number
         let QNumberView = document.createElement('p');
         let QNumber = document.createTextNode(counter + "/10");
         QNumberView.appendChild(QNumber);
         Qs.appendChild(QNumberView);
         //check if the right answer is chosen
-        if(rbt.checked){
+        if (rbt.checked) {
             //add it to sum of result
         }
-        counter++;
+        ++counter;
     } else {
         //check sum of results
         //store it in results score array
