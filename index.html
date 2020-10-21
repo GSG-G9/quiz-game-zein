@@ -15,61 +15,64 @@
         will be placed at the top!
     </p><br>
     <p>shall we start?!</p>
-    <button>LEADERS BOARD</button>
-    <button>start quiz</button>
+    <button id="leaderB" onclick="showLeaderBoard()">LEADERS BOARD</button>
+    <button id="startBtn" onclick="enterName()">start quiz</button>
     </div>
 
     <div id="leaderBoard">
         <h2>LEADERS BOARD</h2>
-        <button>back</button>
+        <button onclick="goBack()">back</button>
     </div>
 
     <div id="userName">
         <p>Enter your name here:</p>
         <input type="text" id="name">
-        <button>Submit</button>
+        <button id="submitBtn" onclick="startQuiz()">Submit</button>
     </div>
 
-    <div id= "firstQ">
-        <p></p>
-        <button></button>
+    <div id="Questions">
+        <div  id= "firstQ">
+            <p></p>
+            <button onclick="nextQ()">next</button>
+        </div>
+        <div id= "secondQ">
+            <p></p>
+            <button onclick="nextQ()">next</button>
+        </div>
+        <div id= "thirdQ">
+            <p></p>
+            <button onclick="nextQ()">next</button>
+        </div>
+        <div id= "fourthQ">
+            <p></p>
+            <button onclick="nextQ()">next</button>
+        </div>
+        <div id= "fifthQ">
+            <p></p>
+            <button onclick="nextQ()">next</button>
+        </div>
+        <div id= "sixthQ">
+            <p></p>
+            <button onclick="nextQ()">next</button>
+        </div>
+        <div id= "seventhQ">
+            <p></p>
+            <button onclick="nextQ()">next</button>
+        </div>
+        <div id= "eighthQ">
+            <p></p>
+            <button onclick="nextQ()">next</button>
+        </div>
+        <div id= "ninthQ">
+            <p></p>
+            <button onclick="nextQ()">next</button>
+        </div>
+        <div id= "tenthQ">
+            <p></p>
+            <button onclick="nextQ()">next</button>
+        </div>
     </div>
-    <div id= "secondQ">
-        <p></p>
-        <button></button>
-    </div>
-    <div id= "thirdQ">
-        <p></p>
-        <button></button>
-    </div>
-    <div id= "fourthQ">
-        <p></p>
-        <button></button>
-    </div>
-    <div id= "fifthQ">
-        <p></p>
-        <button></button>
-    </div>
-    <div id= "sixthQ">
-        <p></p>
-        <button></button>
-    </div>
-    <div id= "seventhQ">
-        <p></p>
-        <button></button>
-    </div>
-    <div id= "eighthQ">
-        <p></p>
-        <button></button>
-    </div>
-    <div id= "ninthQ">
-        <p></p>
-        <button></button>
-    </div>
-    <div id= "tenthQ">
-        <p></p>
-        <button></button>
-    </div>
+    
 
 </body>
 </html>
