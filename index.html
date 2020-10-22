@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz game</title>
+    <link href="styles/look.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="quizPage">
+        <div id="startPage">
+            <h1>welcome to this mini Quiz!!</h1>
+            <h3>here's how it's gonna be</h3>
+            <p>you will have to answer 10 questions
+                then your result will be reviewed on
+                LEADERS BOARD, the highest score
+                will be placed at the top!
+            </p><br>
+            <p>shall we start?!</p>
+            <button id="leaderB" onclick="showLeaderBoard()">LEADERS BOARD</button>
+            <button id="startBtn" onclick="enterName()">start quiz</button>
+            </div>
+        
+            <div id="leaderBoard">
+                <h2>LEADERS BOARD</h2>
+                <button onclick="goBack()">back</button>
+            </div>
+        
+            <div id="userName">
+                <p>Enter your name here:</p>
+                <input type="text" id="name">
+                <button id="submitBtn" onclick="startQuiz()">Submit</button>
+            </div>
+        
+            <div id="Questions">
+                <div  id= "firstQ">
+                    <p>What’s the national flower of Japan?</p>
+                    <input type="radio" name="choice1" value="Daisy"> Daisy
+                    <input type="radio" name="choice1" value="yes"> Cherry blossom
+                    <input type="radio" name="choice1" value="Roses"> Roses
+                    <button onclick="nextQ()">next</button>
+                </div>
+                <div id= "secondQ">
+                    <p>Name the best-selling book series of the 21st century?</p>
+                    <input type="radio" name="choice2" value="Rings"> The Lord of the Rings
+                    <input type="radio" name="choice2" value="WimpyKid"> Diary of a Wimpy Kid
+                    <input type="radio" name="choice2" value="yes"> Harry Potter
+                    <button onclick="nextQ()">next</button>
+                </div>
+                <div id= "thirdQ">
+                    <p>Who invented the iconic Little Black Dress?</p>
+                    <input type="radio" name="choice3" value="Prada"> Prada
+                    <input type="radio" name="choice3" value="yes"> Chanel
+                    <input type="radio" name="choice3" value="SaintLaurent"> Saint Laurent
+                    <button onclick="nextQ()">next</button>
+                </div>
+                <div id= "fourthQ">
+                    <p>What city do The Beatles come from?</p>
+                    <input type="radio" name="choice4" value="yes"> Liverpool
+                    <input type="radio" name="choice4" value="Bristol"> Bristol
+                    <input type="radio" name="choice4" value="Chester"> Chester
+                    <button onclick="nextQ()">next</button>
+                </div>
+                <div id= "fifthQ">
+                    <p>How many keys does a classic piano have?</p>
+                    <input type="radio" name="choice5" value="no"> 86
+                    <input type="radio" name="choice5" value="yes"> 88
+                    <input type="radio" name="choice5" value="no"> 89
+                    <button onclick="nextQ()">next</button>
+                </div>
+                <div id= "sixthQ">
+                    <p>Which football team is known as ‘The Red Devils’?</p>
+                    <input type="radio" name="choice6" value="Liverpool"> Liverpool
+                    <input type="radio" name="choice6" value="yes"> Manchester United
+                    <input type="radio" name="choice6" value="Chelsea"> Chelsea
+                    <button onclick="nextQ()">next</button>
+                </div>
+                <div id= "seventhQ">
+                    <p>Name Pixar’s first feature-length movie?</p>
+                    <input type="radio" name="choice7" value="BugLife"> A Bug's Life
+                    <input type="radio" name="choice7" value="yes"> Toy Story
+                    <input type="radio" name="choice7" value="Up"> Up
+                    <button onclick="nextQ()">next</button>
+                </div>
+                <div id= "eighthQ">
+                    <p>Name Disney’s first film?</p>
+                    <input type="radio" name="choice8" value="yes"> Snow White
+                    <input type="radio" name="choice8" value="Dumbo"> Dumbo
+                    <input type="radio" name="choice8" value="Pinocchio"> Pinocchio
+                    <button onclick="nextQ()">next</button>
+                </div>
+                <div id= "ninthQ">
+                    <p>Name most viewed video on Youtube in first 24 hours?</p>
+                    <input type="radio" name="choice9" value="Boy"> BTS - Boy With Luv
+                    <input type="radio" name="choice9" value="Love"> Blackpink - Kill This Love
+                    <input type="radio" name="choice9" value="yes"> BTS - Dynamite
+                    <button onclick="nextQ()">next</button>
+                </div>
+                <div id= "tenthQ">
+                    <p>Norwegian artist Edvard Munch is famous for painting which iconic piece?</p>
+                    <input type="radio" name="choice0" value="Kiss"> The Kiss
+                    <input type="radio" name="choice0" value="yes"> The Scream
+                    <input type="radio" name="choice0" value="Anxiety"> Anxiety
+                    <button onclick="nextQ()">next</button>
+                </div>
+            </div>
+            
+    </div>
+    <script src="scripts/file.js"></script>
+</body>
+</html>

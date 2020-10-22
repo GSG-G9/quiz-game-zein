@@ -1,0 +1,58 @@
+body{
+    background-color: rgb(201, 253, 166);
+    color: black;
+}
+
+#quizPage{
+    background-color: rgb(201, 253, 166);
+    color: black;
+    text-align:center;
+}
+
+#startPage{
+    background-color: rgb(153, 214, 112);
+    color: black;
+    display: block;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#leaderBoard{
+    display: none;
+    background-color: rgb(153, 214, 112);
+    color: black;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#userName{
+    display: none;
+    background-color: rgb(153, 214, 112);
+    color: black;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#Questions{
+    display: none;
+    background-color: rgb(153, 214, 112);
+    color: black;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+     transform: translate(-50%, -50%);
+}
